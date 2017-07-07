@@ -1,0 +1,896 @@
+@font-face {
+    font-family: QuiteChocolatey ; /* Имя шрифта */
+    src: url(../fonts/QuiteChocolatey.ttf); /* Путь к файлу со шрифтом */
+ }
+@font-face {
+    font-family: Montserrat ; /* Имя шрифта */
+    src: url(../fonts/Montserrat-Regular.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Montserrat-Bold ; /* Имя шрифта */
+    src: url(../fonts/Montserrat-Bold.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: PT-Serif ; /* Имя шрифта */
+    src: url(../fonts/pt-serif.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Couture ; /* Имя шрифта */
+    src: url(../fonts/couture-bld.otf); /* Путь к файлу со шрифтом */
+}
+
+header{
+    background: #0c0623 url("../img/header_bg.png") no-repeat center bottom;
+    background-size: cover;
+    height: 685px;
+    padding: 60px 105px 155px 84px;
+    box-sizing: border-box;
+}
+
+.logo{
+    font-family: QuiteChocolatey;
+    font-size: 88.32px;
+    color: white;
+    line-height: 32px;
+}
+
+header nav{
+    float: right;
+    display: inline-block;
+    text-align: right;
+}
+
+.top_links{ display: block; }
+.top_links li{
+    display: inline-block;
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+.top_links li:last-child{ padding-right: 0;}
+
+.toggle-nav{
+    display: inline-block;
+    color: white;
+    font-size: 32px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 3px solid white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: none;
+}
+
+.active_link{
+    background: #5dbbc1;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.top_links li a{
+    padding: 10px 14px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 500ms ease;
+}
+
+.top_links li a:hover{ border-bottom: 2px solid white; }
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    width: 516px;
+    margin-left: 15px;
+    margin-top: 150px;
+}
+
+.title h1{
+    text-transform: uppercase;
+    font-family: "Montserrat-Bold";
+    font-size: 90px;
+    line-height: 80px;
+    color:#5dbbc1;
+}
+
+.title h1 span{
+    color:white;
+    letter-spacing: -1px;
+    display: block;
+}
+
+.title p{
+    font-family: "PT-Serif";
+    color:white;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.form{
+    margin-top: 150px;
+    width: 400px;
+    background-color: #5dbbc1;
+    border-radius: 5px;
+    padding: 30px 20px 25px 25px;
+    box-sizing: border-box;
+}
+
+.form h3{
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: "Montserrat";
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form input{
+    width: 100%;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    box-shadow: none;
+    font-family: "PT-Serif";
+    font-size: 20px;
+    transition: all 500ms ease;
+}
+
+.form input[type="text"]:hover,.form input[type="tel"]:hover,
+.form input[type="text"]:focus,.form input[type="tel"]:focus{
+    box-shadow: inset 0 0 6px 1px rgba(175,175,175,0.5);
+    border: 1px solid rgba(175,175,175,1);
+    border-radius: 5px;
+}
+
+.form input[placeholder]          {color:#b5b5b5;}
+.form input::-moz-placeholder     {color:#b5b5b5;}
+.form input:-moz-placeholder      {color:#b5b5b5;}
+.form input:-ms-input-placeholder {color:#b5b5b5;}
+
+.form input[type="checkbox"]{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: all 50ms ease;
+}
+
+.form label{
+    font-size: 20px;
+    line-height: 25px;
+    color:white;
+    font-family: "PT-Serif";
+}
+
+.form input[type="submit"]{ font-family: "Montserrat"; }
+
+.btn{
+    background: #130e27;
+    color: white;
+    font-size:22px ;
+    font-family: "Montserrat";
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.btn:hover{ background: #332765;}
+
+body>section{ padding: 0 105px 0 84px;}
+
+#services{
+    padding-top: 45px;
+    padding-bottom: 65px;
+}
+
+.sect_title{
+    color:#5dbbc1;
+    font-family: Couture;
+    font-size: 50px;
+    line-height: 80px;
+}
+
+#services .sect_title span{ color:#130e27; }
+
+.benefits{
+    margin-top: 95px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.benefits_item{
+    margin-left: 15px;
+    width: 180px;
+    padding-top: 195px;
+    text-align: center;
+}
+
+.benefits_title{
+    font-size: 20px;
+    color: #161616;
+    font-family: "PT-Serif";
+}
+
+.hurt{
+    background:url("../img/hurt.png") no-repeat center top;
+    background-size: contain;
+}
+
+.tools{
+    background:url("../img/tools.png") no-repeat center top;
+    background-size: contain;
+}
+
+.lamp{
+    background:url("../img/lamp.png") no-repeat center top;
+    background-size: contain;
+}
+
+.navig{
+    background:url("../img/nav.png") no-repeat center top;
+    background-size: contain;
+}
+
+#services_consult{
+    padding: 30px 100px 25px 84px;
+    background: #5dbbc1;
+}
+
+#services_consult p{
+    display: inline-block;
+    margin-left: 15px;
+    width: 620px;
+    color:white;
+    font-size: 20px;
+    font-family: "PT-Serif";
+}
+
+#services_consult .btn{
+    float: right;
+    padding: 20px 60px;
+    margin-top: 0;
+}
+
+.pricing{
+    background: #efefef;
+    padding-top: 45px;
+}
+
+.pricing .sect_title{
+    text-align: center;
+    color:#130e27;
+}
+
+.pricers{
+    padding-top: 50px;
+    display: flex;
+}
+
+.price_item{
+    display: inline-block;
+    margin-left: 15px;
+    flex-grow: 1;
+    padding-top: 35px;
+    text-align: center;
+    background: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.corner{
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #5dbbc1;
+    top: -50px;
+    left: -50px;
+}
+
+.corner span{
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    transform: translateX(50%);
+    font-size: 16px;
+}
+
+.price_title{
+    font-size: 22px;
+    color: #161616;
+    font-family: "PT-Serif";
+}
+
+.price_list{
+    margin-top: 35px;
+    list-style: none;
+}
+
+.price_list li{
+    font-family: "PT-Serif";
+    font-size: 20px;
+    line-height: 28px;
+    color:#161616;
+}
+
+.price_list li.price_cost{
+    font-family: "Montserrat-Bold";
+    font-size: 60px;
+    color: #130e27;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.price_item .btn{
+    margin-top: 30px;
+    width: 205px;
+}
+
+.price_item .btn-blue{
+    background: #5dbbc1;
+    color: #130e27;
+}
+
+#testi_gallery{
+    padding-top: 120px;
+    padding-bottom:115px;
+}
+.clearfix{
+    content:'';
+    display:block;
+    clear: both;
+}
+
+#testi_gallery::after, #services_consult::after {
+    content:'';
+    display:block;
+    clear: both;
+}
+
+#testi_gallery section{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    text-align: center;
+}
+
+.testimonial .sect_title{ color:#130e27; }
+
+.review{
+    position: relative;
+    margin: 60px auto 0;
+    height: 140px;
+    border-radius: 5px;
+    text-align: left;
+    padding: 25px 70px 25px 25px;
+    width: 440px;
+    box-sizing: border-box;
+}
+
+.review p{
+    font-family: "PT-Serif";
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.review h3{
+    font-size: 20px;
+    line-height:28px ;
+    font-family: "Montserrat";
+    margin-top: 20px;
+}
+
+.review_blue{ background: #93ced3; }
+
+.round_img{
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    box-shadow: 0px -5px 15px 0px rgba(184, 172, 147, 0.75);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%,-50%);
+}
+
+.ri1{ background:url("../img/ri1.png") no-repeat center center; }
+
+.ri2{ background:url("../img/ri2.png") no-repeat center center; }
+
+.gallery_list{
+    width: 485px;
+    margin: 85px auto 0;
+}
+
+.gallery_list .round_img{
+    position: relative;
+    margin: 0 25px 25px;
+    display: inline-block;
+    transform: translate(0,0);
+}
+
+.img1{ background:url("../img/img1.png") no-repeat center center; }
+
+.img2{ background:url("../img/img2.png") no-repeat center center; }
+
+.img3{ background:url("../img/img3.png") no-repeat center center; }
+
+.img4{ background:url("../img/img4.png") no-repeat center center; }
+
+.img5{ background:url("../img/img5.png") no-repeat center center; }
+
+.img6{ background:url("../img/img6.png") no-repeat center center; }
+
+.gallery_more{
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 20px;
+    line-height: 28px;
+    color:#130e27;
+    margin-top: 10px;
+    border-bottom: 1px solid #130e27;
+    transition: all 200ms ease;
+    display: inline-block;
+}
+
+.gallery_more:hover{
+    color:#5dbbc1;
+    border-bottom: 1px solid #5dbbc1;
+}
+
+footer{
+    height: 185px;
+    background: #130e27;
+    color: white;
+    padding:0 84px 0 100px;
+}
+
+footer .logo{
+    float: right;
+    line-height: 185px;
+    font-size: 64.36px;
+    color: #5dbbc1;
+}
+
+footer nav{
+    display: inline-block;
+    float: left;
+    line-height: 185px;
+}
+
+footer ul li{
+    display: inline-block;
+    font-size: 20px;
+    font-family: "PT-Serif";
+}
+
+footer ul li::after{
+    content: "|";
+    padding: 0 5px;
+}
+
+footer ul li:last-child::after{
+    content: "";
+    padding: 0;
+}
+
+footer ul li span{ color:#5dbbc1; }
+
+.scrl{
+    -webkit-transition: opacity 1200ms ease;
+    -moz-transition: opacity 1200ms ease;
+    -o-transition: opacity 1200ms ease;
+    transition: opacity 1200ms ease;
+    opacity: 0;
+}
+
+.scrl.appeared { opacity: 1;}
+
+@media screen and (min-width: 1650px) {
+    body>section,header,#services_consult{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+}
+@media screen and (max-width: 1280px) {
+    .gallery_list{
+        margin:60px 0 0;
+        width: auto;
+    }
+
+    .review{ margin:60px 0 0; }
+}
+
+@media screen and (max-width: 1150px) {
+    header{ padding: 60px 80px 155px; }
+
+    body>section,#services_consult{ padding: 0 60px; }
+
+    #services_consult{
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+
+    .benefits{ margin-top: 40px; }
+
+    .title{ padding-right: 30px; }
+
+    .title h1{ font-size: 70px; }
+
+    .title p{ font-size: 18px; }
+
+    .form input,.form label{ font-size: 16px; }
+
+    .review{
+        height: auto;
+        width: 380px;
+        font-size: 18px;
+        margin: 15px 0 0;
+    }
+
+    .review p{ font-size: 18px; }
+
+    .review h3{ font-size: 18px; }
+
+    #services_consult p{ font-size: 18px; }
+
+    #services_consult .btn{
+        font-size: 18px;
+        padding: 20px 30px;
+    }
+
+    .gallery_more{ margin-top: 25px; }
+
+    .gallery_list .round_img{ margin: 0 18px 18px; }
+}
+
+@media screen and (max-width: 940px) {
+    header{ padding: 40px 40px 80px; }
+    .title{
+        margin-top: 80px;
+    }
+
+    .benefits_title{ font-size: 16px; }
+
+    .benefits_item{ width: 160px; }
+
+    .title h1{
+        font-size: 55px;
+        line-height: 70px;
+    }
+
+    .title p{ margin-top: 30px; }
+
+    .form{ margin-top: 90px; }
+
+    .form input{ padding: 10px; }
+
+    .form input[type=checkbox]{
+        width: 15px;
+        height: 15px;
+        padding: 10px;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    .form label{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .top_links{
+        width: 300px;
+        display: none;
+        position: absolute;
+        transform: translateX(-85%);
+    }
+
+    .toggle-nav{
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .form{ padding: 15px; }
+
+    .price_list li{ font-size: 16px; }
+
+    .price_item .btn{ width: 170px; }
+
+    .form h3{ font-size: 18px; }
+
+    .top_links li{
+        display: block;
+        box-sizing: border-box;
+        background-color: rgba(19,14,39,0.8);
+        margin: 2px 0;
+    }
+
+    .top_links a{
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .active_link{ border-radius: 0; }
+
+    .top_links .active_link a{ color:#5dbbc1; }
+
+    #services_consult p{
+        font-size: 16px;
+        width: 75%;
+    }
+
+    #services_consult .btn{ padding: 15px 20px; }
+
+    #testi_gallery{
+        padding-top: 10px;
+        padding-bottom: 70px;
+    }
+    #testi_gallery>section{
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .review{ margin: 15px auto 0; }
+
+    .gallery_list{
+        margin: 40px auto 0;
+        width: 485px;
+    }
+
+    footer{
+        padding: 0 30px;
+        height: 100px;
+        line-height: 100px;
+    }
+
+    footer nav{
+        height: 100px;
+        line-height: 100px;
+    }
+    footer nav ul li{ font-size: 14px; }
+
+    footer .logo{ line-height: 100px; }
+}
+
+@media screen and (max-width: 768px) {
+    .toggle-nav{
+        width: 30px;
+        height: 30px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    header{ height: auto; }
+
+    .logo{ font-size: 60px; }
+
+    .top_links{ width: 250px; }
+
+    .top_links li a{ font-size: 16px; }
+
+    .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title{ text-align: center; }
+
+    .title h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .form{ margin-top: 50px; }
+
+    .sect_title{ font-size: 40px; }
+
+    #services_consult p{ width: 60%; }
+
+    #services_consult .btn{ margin: 1% auto; }
+
+    .pricing .sect_title{ line-height: 50px; }
+
+    .price_list li.price_cost{
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .price_item .btn{
+        width: 150px;
+        font-size: 18px;
+    }
+
+    footer .logo{ font-size: 40px; }
+}
+
+@media screen and (max-width: 664px){
+    .title{ width: auto; }
+
+    .benefits{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .sect_title{
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .benefits_item{
+        margin: 0 20px 40px;
+        padding-top: 160px;
+    }
+
+    .form{ width: 350px; }
+
+
+    .review,.gallery_list{
+        box-sizing: border-box;
+        width: 90%;
+    }
+
+    .review{ transform: translateX(-50px); }
+
+    .pricers{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price_item{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .price_item .btn {
+        width: 90%;
+        display: block;
+        margin: 0 auto 10px;
+
+    }
+    #services{ padding-bottom: 20px; }
+
+    #services_consult p{ width: 50%; }
+
+    #services_consult .btn{ transform: translateY(50%); }
+
+    footer ul,footer .logo{
+        line-height: normal;
+        transform: translateY(50%);
+    }
+
+    footer ul li:nth-child(2)::after{ content: ""; }
+
+    footer ul li:nth-child(3){
+        display: block;
+        height: 25px;
+    }
+
+    footer after{
+        content: " ";
+        display: block;
+        clear: both;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .benefits_item{
+        width: 200px;
+        padding-top: 200px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .form{ width: auto; }
+
+    .form h3{ margin-bottom: 0px; }
+
+    .form input,.form label{ font-size: 14px; }
+
+    .title h1{
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .benefits_item {
+        width: 160px;
+        padding-top: 150px;
+    }
+
+    #services_consult{ text-align: center; }
+
+    #services_consult p{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #services_consult .btn{
+        margin-top: 20px;
+        transform: none;
+        float: none;
+    }
+
+    .pricers{ padding-top:20px; }
+
+    #testi_gallery{ padding: 10px 20px 40px; }
+
+    .review{
+        padding: 5px;
+        padding-top: 150px;
+        box-sizing: border-box;
+        transform: none;
+    }
+
+    .review .round_img{
+        position: absolute;
+        top: 30%;
+        right: 50%;
+    }
+
+    .review_blue{ background-color: white; }
+
+    footer{
+        text-align: center;
+        height: auto;
+        line-height: normal;
+    }
+
+    footer nav{ height: auto; }
+
+    footer nav,footer .logo{
+        display: block;
+        float: none;
+        transform: none;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    header{ padding: 20px; }
+
+    .title p{ font-size:16px; }
+
+    .benefits_item{
+        width: 140px;
+        padding-top: 140px;
+    }
+
+    .pricing{ padding: 0 30px; }
+
+    .price_item{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .review{ padding-top: 125px; }
+
+    .review .round_img{
+        position: absolute;
+        top: 0%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .gallery_list .round_img{ margin: 0 8px 18px; }
+}
